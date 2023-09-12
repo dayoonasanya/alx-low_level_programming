@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  *print_last_digit - prints last digit
+ *@x: the number to compute
  *
- * Return 0 if success.
+ *Return: 0 if success.
  */
 int print_last_digit(int x)
 {
