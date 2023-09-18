@@ -1,23 +1,23 @@
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main function & entry point
+ * main - main function for program
  *
- * Return: generated password returned
+ * Return: created password
  */
 int main(void)
 {
-char i;
-int y;
+char c;
+int x;
 
 srand(time(0));
-while (y <= 2645)
+while (x <= 2645)
 {
-i = rand() % 128;
-y += i;
-putchar(i);
+c = rand() % 128;
+x += c;
+putchar(c);
 }
-putchar(2772 - y);
+putchar(2772 - x);
 return (0);
 }
