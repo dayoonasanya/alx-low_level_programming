@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- *_strcat - function: concatenates the given strings
- *
- *@dest: string to be concatenated
- *@src: string to be cocatenated
+ *_strcat - concatenates  the string pointed
+ *@dest: String that will be appended
+ *@src: String to be concatenated upon
  *
  * Return: returns poiner to @dest
  */
@@ -12,13 +11,13 @@
 char *_strcat(char *dest, char *src)
 {
 
-	int i = 0, y = 0;
+	int index = 0, dest_len = 0;
 
-	while (dest[i++])
-		y++;
+	while (dest[index++])
+		dest_len++;
 
-	for (i = 0; src[i]; i++)
-		dest[y++] = src[i];
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
 
 	return (dest);
 }
