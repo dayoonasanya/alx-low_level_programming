@@ -11,7 +11,7 @@
  * Return: return 0.
  */
 
-int main(int _attribute((__unused_)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	char pwd[7], *c;
 	int l = strlen(argv[1]), j, p;
